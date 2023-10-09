@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.feedContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+}

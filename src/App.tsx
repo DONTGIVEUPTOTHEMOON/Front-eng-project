@@ -2,8 +2,9 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
+import Community from './pages/Community'
 import Profile from './pages/Profile'
-import Create from './pages/Create'
+import Create from './components/Create'
 import PostDetail from './pages/PostDetail'
 import Login from './pages/Login'
 import GuardedRoute from './guard/GuardedRoute'
@@ -17,6 +18,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/community" element={<Community />} />
         <Route path="/post/:id" element={<PostDetail />} />
 
         <Route element={<GuardedRoute isRouteAccessible={isLoggedIn} redirectRoute="/login" />}>

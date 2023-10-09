@@ -1,0 +1,56 @@
+.navbar {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.957);
+  padding: 20px 16px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inactive {
+  text-decoration: none;
+}
+
+.active {
+  color: #0040ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: Inter, Sarabun, sans-serif;
+  display: flex;
+  font-weight: 700;
+  color: #ff731d;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 42px;
+  height: 42px;
+}
+
+.login {
+  background-color: #eee;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  text-decoration-line: none;
+}
+
+.login:hover {
+  background-color: #6666dc;
+  cursor: pointer;
+}

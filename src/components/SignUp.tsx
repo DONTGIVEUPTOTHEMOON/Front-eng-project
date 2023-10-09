@@ -1,9 +1,9 @@
 import { FormEvent, useState } from 'react'
-import classes from './Login.module.css'
+import classes from './SignUp.module.css'
 import { useAuth } from '../providers/AuthProvider'
 import { useNavigate } from 'react-router-dom'
 
-const Login = () => {
+const SignUp = () => {
   const { login } = useAuth()
   const navigate = useNavigate()
   const [username, setUsername] = useState<string>('')
@@ -22,15 +22,22 @@ const Login = () => {
 
   return (
     <form className={classes.loginForm} onSubmit={handleSubmit}>
+      <h1>Join the millions learning to code avigatewith Codecademy for free</h1>
+      <label>Your Name:</label>
+      <input className={classes.buttonforCreated} type="text" onChange={(e) => setUsername(e.target.value)} />
+
       <label>Username:</label>
       <input className={classes.buttonforCreated} type="text" onChange={(e) => setUsername(e.target.value)} />
 
       <label>Password:</label>
       <input className={classes.buttonforCreated} type="Password" onChange={(e) => setPassword(e.target.value)} />
 
-      <input className={classes.buttonforCreated} type="submit" value="Login" />
+      <label>Confirm Password:</label>
+      <input className={classes.buttonforCreated} type="Password" onChange={(e) => setPassword(e.target.value)} />
+
+      <input className={classes.signup} type="submit" value="Sign up" />
     </form>
   )
 }
 
-export default Login
+export default SignUp
