@@ -4,6 +4,7 @@ import Slider from '../components/sliders/Slider'
 import SignUp from '../components/SignUp'
 import CourseInhome from '../components/CourseInhome'
 import Interviwes from '../components/Interviwes'
+import Footer from '../components/Footer'
 
 const Home = () => {
   const { isLoading } = usePosts()
@@ -22,6 +23,7 @@ const Home = () => {
       <div>
         <Interviwes />
       </div>
+      <Footer />
     </div>
   )
 }

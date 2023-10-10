@@ -1,17 +1,15 @@
 .navbar {
-  height: auto;
   width: 100%;
   background-color: rgb(255, 237, 221);
-  padding: 20px 16px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 50px;
   padding-right: 50px;
   box-sizing: border-box;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0px;
 }
 
 .menu {
@@ -37,7 +35,7 @@
   font-weight: 700;
   color: #ff731d;
   font-size: 24px;
-  margin: 0;
+
   padding: 0;
   box-sizing: border-box;
   width: 42px;

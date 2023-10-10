@@ -9,7 +9,6 @@ import PostDetail from './pages/PostDetail'
 import Login from './pages/Login'
 import GuardedRoute from './guard/GuardedRoute'
 import { useAuth } from './providers/AuthProvider'
-import Footer from './components/Footer'
 
 function App() {
   const { isLoggedIn } = useAuth()
@@ -31,7 +30,6 @@ function App() {
           <Route path="/login" element={<Login />} />
         </Route>
       </Routes>
-      <Footer />
     </div>
   )
 }
