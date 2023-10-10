@@ -1,7 +1,8 @@
 import usePosts from '../hooks/useContents'
 import classes from './Home.module.css'
-import SignUp from '../components/SignUp'
 import Slider from '../components/sliders/Slider'
+import SignUp from '../components/SignUp'
+import CourseInhome from '../components/CourseInhome'
 
 const Home = () => {
   const { isLoading } = usePosts()
@@ -9,9 +10,14 @@ const Home = () => {
   if (isLoading) return <h1 style={{ textDecoration: 'none', color: ' #6666dc' }}>Loading...</h1>
 
   return (
-    <div className={classes.container}>
-      <Slider />
-      <SignUp />
+    <div>
+      <div className={classes.container1}>
+        <Slider />
+        <SignUp />
+      </div>
+      <div>
+        <CourseInhome />
+      </div>
     </div>
   )
 }

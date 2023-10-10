@@ -1,9 +1,12 @@
 .navbar {
   height: auto;
   width: 100%;
-  background-color: white;
-  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.957);
+  background-color: rgb(255, 237, 221);
   padding: 20px 16px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
   box-sizing: border-box;
 
   display: flex;

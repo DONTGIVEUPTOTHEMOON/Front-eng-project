@@ -7,12 +7,11 @@
   gap: 100px;
   display: flex;
   flex-direction: column;
-  background-color: #6666dc14;
+  color: black;
   margin-top: 100px;
   padding: 15px 15px;
-  border-radius: 10px;
+  border-radius: 15px;
   gap: 20px;
-  color: aliceblue;
 }
 .postForm {
   display: flex;
@@ -29,18 +28,18 @@
 }
 
 .buttonforCreated {
-  background-color: #eee;
+  background-color: white;
   padding: 20px 10px;
   box-sizing: border-box;
 
-  border-color: rgb(255, 164, 84);
+  border-color: rgb(63, 80, 238);
   border-width: 3px;
   border-radius: 6px;
 }
 
 .signup {
   /* background-color: rgb(48, 66, 229); */
-  background-color: rgb(255, 164, 84);
+  background-color: rgb(63, 80, 238);
   border: none;
   padding: 15px 20px;
   border-radius: 6px;
