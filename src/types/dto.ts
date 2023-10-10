@@ -81,3 +81,13 @@ export interface SliderDTO {
   heading: string
   desc: string
 }
+
+export interface CourseDTO {
+  header: string
+  description: string
+  tags: string[]
+  author: string
+  date: string
+  readingTime: string
+  url: string
+}
