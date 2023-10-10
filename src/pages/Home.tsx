@@ -3,6 +3,7 @@ import classes from './Home.module.css'
 import Slider from '../components/sliders/Slider'
 import SignUp from '../components/SignUp'
 import CourseInhome from '../components/CourseInhome'
+import Interviwes from '../components/Interviwes'
 
 const Home = () => {
   const { isLoading } = usePosts()
@@ -17,6 +18,9 @@ const Home = () => {
       </div>
       <div>
         <CourseInhome />
+      </div>
+      <div>
+        <Interviwes />
       </div>
     </div>
   )

@@ -91,3 +91,10 @@ export interface CourseDTO {
   readingTime: string
   url: string
 }
+
+export interface InterviweDTO {
+  profile: string
+  description: string
+  user: string
+  date: string
+}

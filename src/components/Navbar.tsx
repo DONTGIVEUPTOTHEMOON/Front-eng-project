@@ -18,9 +18,7 @@ const Navbar = () => {
         <NavLink className={({ isActive }) => (isActive ? classes.active : classes.inactive)} to="/">
           <h1>Home</h1>
         </NavLink>
-        <NavLink className={({ isActive }) => (isActive ? classes.active : classes.inactive)} to="/create">
-          <p>Course</p>
-        </NavLink>
+
         <NavLink className={({ isActive }) => (isActive ? classes.active : classes.inactive)} to="/community">
           <p>Community</p>
         </NavLink>

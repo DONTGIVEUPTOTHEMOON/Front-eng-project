@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.containerPodcast {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.metaData {
+  font-size: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.author {
+  color: #b90101;
+}
+
+.dateAndTime {
+  color: #6b6b6b;
+}
+
+.blogHeader {
+  font-size: 36px;
+}
+
+.description {
+  color: #6b6b6b;
+  font-size: 22px;
+}
+
+.tagContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
