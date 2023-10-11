@@ -3,9 +3,11 @@
   height: 90vh;
   position: relative;
   overflow: hidden;
+  border-radius: 50px;
+  margin-top: 50px;
 }
 
-.slide {
+.slided {
   position: absolute;
   top: 0;
   left: 0;
@@ -25,7 +27,8 @@
 
 .slide img {
   width: 100%;
-  height: 100%;
+  height: 50%;
+  border-radius: 50px;
 }
 
 .current {

@@ -36,11 +36,12 @@
 .container {
   display: flex;
   flex-direction: column;
+  background-color: black;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .containerIntro {
-  padding-left: 40px;
-  padding-right: 40px;
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
@@ -48,6 +49,7 @@
   align-content: center;
   background-color: rgb(0, 0, 0);
   color: aliceblue;
+  gap: 30px;
 }
 
 .cardIntro {
@@ -79,24 +81,19 @@
   position: absolute;
   top: -18%; /* จัดตำแหน่งของ form ให้อยู่ที่กลางด้านบนของภาพ */
   left: 5%; /* จัดตำแหน่งของ form ให้อยู่ที่กลางด้านซ้ายของภาพ */
-  right: 5%; /* จัดตำแหน่งของ form ให้อยู่ที่กลางด้านซ้ายของภาพ */
+  right: 5%;
   align-items: center;
   align-content: center;
-  padding: 20px; /* ขอบรอบฟอร์ม */
+  padding: 20px;
 }
 
-.containerContent {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
 .cardContent {
   display: grid;
   background-color: rgb(0, 0, 0);
-
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
   border: 1px solid #000000b9;
-  padding: 24px 24px;
 }
 
 .fontmian {

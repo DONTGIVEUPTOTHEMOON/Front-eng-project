@@ -24,7 +24,21 @@ const useContent = (id: string) => {
     fetchData()
   }, [id])
 
-  return { content, isLoading, error }
+  const deletes = async () => {
+    const token = localStorage.getItem('token')
+    try {
+      await axios.delete(`https://api.learnhub.thanayut.in.th/content/${id}`, {
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+      })
+    } catch (err) {
+      throw new Error('Cannot delete post')
+    }
+  }
+
+  return { content, isLoading, error, deletes }
 }
 
 export default useContent
