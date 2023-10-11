@@ -1,19 +1,17 @@
 .post {
   width: 100%;
   height: auto;
-  padding: 10px 20px;
   margin-top: 10px;
   margin-bottom: 10px;
   box-sizing: border-box;
   box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.42);
   background-color: #00000000;
-  border-radius: 30px;
+  border-radius: 50px;
 }
 
-.img {
-  overflow: hidden;
-}
-
-.img img {
+.thumbnailurl {
   width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 25px 25px 0 0;
 }

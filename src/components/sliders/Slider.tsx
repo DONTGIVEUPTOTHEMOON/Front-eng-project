@@ -9,7 +9,7 @@ const Slider = () => {
 
   const autoScroll = true
   let slideInterval: NodeJS.Timeout
-  let intervalTime = 5000
+  let intervalTime = 3000
 
   const nextSlide = () => {
     setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1)
@@ -39,25 +39,27 @@ const Slider = () => {
 
   return (
     <div className={classes.slider}>
-      <AiOutlineArrowLeft className={classes.arrow} onClick={prevSlide} />
-      <AiOutlineArrowRight className={classes.arrow} onClick={nextSlide} />
-      {sliderData.map((slide, index) => {
-        return (
-          <div className={index === currentSlide ? 'slide current' : 'slide'} key={index}>
-            {index === currentSlide && (
-              <div>
-                <img src={slide.Image} alt="slide" className="image" />
-                <div className={classes.content}>
-                  <h2>{slide.heading}</h2>
-                  <p>{slide.desc}</p>
-                  <hr />
-                  <button className="--btn --btn-primary">Get Started</button>
+      <div className={classes.slide}>
+        <AiOutlineArrowLeft className={classes.arrow} onClick={prevSlide} />
+        <AiOutlineArrowRight className={classes.arrow} onClick={nextSlide} />
+        {sliderData.map((slide, index) => {
+          return (
+            <div className={index === currentSlide ? 'slide current' : 'slide'} key={index}>
+              {index === currentSlide && (
+                <div>
+                  <img src={slide.Image} alt="slide" className="image" />
+                  <div className={classes.content}>
+                    <h2>{slide.heading}</h2>
+                    <p>{slide.desc}</p>
+                    <hr />
+                    <button className="--btn --btn-primary">Get Started</button>
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
-        )
-      })}
+              )}
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }

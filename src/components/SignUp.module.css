@@ -34,15 +34,30 @@
 
   border-color: rgb(63, 80, 238);
   border-width: 3px;
-  border-radius: 6px;
+  border-radius: 30px;
 }
 
 .signup {
   /* background-color: rgb(48, 66, 229); */
-  background-color: rgb(63, 80, 238);
+  background-color: rgb(40, 62, 255);
   border: none;
-  padding: 15px 20px;
+  margin-top: 15px;
+  padding: 20px 20px;
   border-radius: 6px;
+  color: #eee;
+  font-size: large;
+  font-weight: 700;
+  border-radius: 30px;
+}
+
+.signup:hover {
+  /* background-color: rgb(48, 66, 229); */
+  background-color: rgba(59, 78, 246, 0.879);
+  margin-top: 15px;
+  padding: 20px 20px;
+  border: none;
+
+  border-radius: 30px;
   color: #eee;
   font-size: large;
   font-weight: 700;

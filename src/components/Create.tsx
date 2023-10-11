@@ -20,7 +20,7 @@ const Create = () => {
       setNewComment('')
       setNewRating(0)
 
-      navigate('/')
+      navigate('/community')
     } catch (err) {
       console.error(err)
     }

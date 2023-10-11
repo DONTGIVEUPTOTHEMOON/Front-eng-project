@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  background-color: rgb(255, 237, 221);
+  background-color: rgb(255, 255, 255);
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 50px;
@@ -20,12 +20,29 @@
 }
 
 .inactive {
+  color: black;
   text-decoration: none;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.inactive:hover {
+  color: rgb(127, 127, 127);
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 .active {
   color: #0040ff;
-  font-weight: bold;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.active:hover {
+  color: #6872ff;
+  font-size: 25px;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -43,15 +60,19 @@
 }
 
 .login {
-  background-color: #eee;
-  padding: 8px 10px;
+  background-color: #b0b0b0;
+  font-size: 25px;
+  font-weight: 600;
+  color: aliceblue;
+  padding: 10px 50px;
   box-sizing: border-box;
-  border: none;
-  border-radius: 6px;
+  border-color: #0000ff;
+  border-width: 10px;
+  border-radius: 100px;
   text-decoration-line: none;
 }
 
 .login:hover {
-  background-color: #6666dc;
+  background-color: #0000ff;
   cursor: pointer;
 }

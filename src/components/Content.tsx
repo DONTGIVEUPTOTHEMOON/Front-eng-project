@@ -17,7 +17,7 @@ const Content = ({ content }: IContentProps) => {
   return (
     <div className={classes.post}>
       <Link to={`/post/${content.id}`} style={{ textDecoration: 'none', color: 'white' }}>
-        <img src={content.thumbnailUrl}></img>
+        <img className={classes.thumbnailurl} src={content.thumbnailUrl}></img>
         <p>title: {content.videoTitle}</p>
         <h4>{content.comment}</h4>
         <p>{content.postedBy.username}</p>

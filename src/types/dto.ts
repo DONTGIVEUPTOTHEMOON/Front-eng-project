@@ -31,7 +31,7 @@ export interface LoginDTO {
   password: string
 }
 
-export interface RegisterDTO {
+export interface SignUpDTO {
   username: string
   password: string
   name: string
