@@ -14,7 +14,7 @@ const Login = () => {
 
     try {
       await login(username, password)
-      navigate('/')
+      navigate('/profile')
     } catch (err) {
       console.log(err)
     }
@@ -24,17 +24,22 @@ const Login = () => {
     <div className={classes.container}>
       <img
         className={classes.img}
-        src="https://images.unsplash.com/photo-1556565681-67b9cd907d20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+        src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2855&q=80"
       />
-      <form className={classes.loginForm} onSubmit={handleSubmit}>
-        <label>Username:</label>
-        <input className={classes.buttonforCreated} type="text" onChange={(e) => setUsername(e.target.value)} />
+      <div className={classes.containerLogin}>
+        <div className={classes.formcontainer}>
+          <form className={classes.loginForm} onSubmit={handleSubmit}>
+            <h1>Hi! What's your username?</h1>
+            <label>Username:</label>
+            <input className={classes.postForm} type="text" onChange={(e) => setUsername(e.target.value)} />
 
-        <label>Password:</label>
-        <input className={classes.buttonforCreated} type="Password" onChange={(e) => setPassword(e.target.value)} />
+            <label>Password:</label>
+            <input className={classes.postForm} type="Password" onChange={(e) => setPassword(e.target.value)} />
 
-        <input className={classes.buttonforCreated} type="submit" value="Login" />
-      </form>
+            <input className={classes.buttonforCreated} type="submit" value="Login" />
+          </form>
+        </div>
+      </div>
     </div>
   )
 }

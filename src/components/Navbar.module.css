@@ -9,7 +9,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0px;
   position: sticky;
   top: 0px;
 }
@@ -29,20 +28,20 @@
 }
 
 .inactive:hover {
-  color: rgb(127, 127, 127);
+  color: #0000ff;
   text-decoration: none;
   font-size: 25px;
   font-weight: 400;
 }
 
 .active {
-  color: #0040ff;
+  color: #0000ff;
   font-size: 25px;
   font-weight: 600;
   text-decoration: none;
 }
 .active:hover {
-  color: #6872ff;
+  color: #0000ff;
   font-size: 25px;
   font-weight: 600;
   text-decoration: none;
@@ -68,7 +67,6 @@
   color: aliceblue;
   padding: 10px 50px;
   box-sizing: border-box;
-  border-color: #0000ff;
   border-width: 10px;
   border-radius: 100px;
   text-decoration-line: none;
@@ -87,4 +85,9 @@
   box-sizing: border-box;
   border-radius: 150px;
   text-decoration-line: none;
+  border: none;
+}
+.logout:hover {
+  background-color: #0000ff;
+  cursor: pointer;
 }
