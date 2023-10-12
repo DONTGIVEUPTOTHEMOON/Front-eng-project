@@ -28,15 +28,15 @@
 }
 
 .inactive:hover {
-  color: #0000ff;
+  color: rgba(19, 71, 229, 0.878);
   text-decoration: none;
   font-size: 25px;
   font-weight: 400;
 }
 
 .active {
-  color: #0000ff;
-  font-size: 25px;
+  color: rgba(19, 71, 229, 0.878);
+  font-size: 35px;
   font-weight: 600;
   text-decoration: none;
 }

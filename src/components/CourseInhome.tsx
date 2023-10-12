@@ -13,7 +13,7 @@ const CourseInhome = () => {
             <rect x="4" y="8" width="8" height="2" fill="currentColor" stroke="none" />
             <rect x="4" y="12" width="5" height="2" fill="currentColor" stroke="none" />
           </svg>
-          <p>Blog</p>
+          <h1>course</h1>
         </div>
         <p className={classes.viewAll}>View All</p>
       </div>

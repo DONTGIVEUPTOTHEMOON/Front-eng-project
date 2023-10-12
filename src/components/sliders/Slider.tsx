@@ -9,7 +9,7 @@ const Slider = () => {
 
   const autoScroll = true
   let slideInterval: NodeJS.Timeout
-  let intervalTime = 3000
+  let intervalTime = 5000
 
   const nextSlide = () => {
     setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1)

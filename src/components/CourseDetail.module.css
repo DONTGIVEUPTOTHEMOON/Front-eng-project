@@ -1,14 +1,30 @@
 .container {
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
-  gap: 16px;
+  height: 350px;
+  gap: 30px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 40px 40px;
+}
+.container:hover {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  height: 350px;
+  gap: 30px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 40px 40px;
+  box-shadow: 0 0 10px 10px #4e83ff;
 }
 
-.containerPodcast {
+/* .containerPodcast {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
+} */
 
 .metaData {
   font-size: 20px;
@@ -17,7 +33,7 @@
 }
 
 .author {
-  color: #b90101;
+  color: rgba(19, 71, 229, 0.878);
 }
 
 .dateAndTime {
