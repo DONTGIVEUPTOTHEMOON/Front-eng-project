@@ -30,7 +30,7 @@ const Navbar = () => {
             <NavLink className={({ isActive }) => (isActive ? classes.active : classes.inactive)} to="/profile">
               Profile
             </NavLink>
-            <button className={classes.login} onClick={logout}>
+            <button className={classes.logout} onClick={logout}>
               Log out
             </button>
           </>

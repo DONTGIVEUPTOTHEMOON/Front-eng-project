@@ -10,6 +10,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0px;
+  position: sticky;
+  top: 0px;
 }
 
 .menu {
@@ -75,4 +77,14 @@
 .login:hover {
   background-color: #0000ff;
   cursor: pointer;
+}
+.logout {
+  background-color: #b0b0b0;
+  font-size: 25px;
+  font-weight: 600;
+  color: aliceblue;
+  padding: 10px 50px;
+  box-sizing: border-box;
+  border-radius: 150px;
+  text-decoration-line: none;
 }
