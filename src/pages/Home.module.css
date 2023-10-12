@@ -1,17 +1,13 @@
-.container1 {
+.feedContainer {
+  display: flex;
+  flex-direction: column;
+}
+.container {
   display: flex;
   flex-direction: row;
   margin-top: 60px;
   margin-left: 60px;
-  margin-right: 50px;
+  margin-right: 60px;
   justify-content: space-between;
   gap: 100px;
-}
-
-.feedContainer {
-  display: flex;
-  flex-direction: column;
-  max-width: 800px;
-  width: 100%;
-  gap: 50px;
 }

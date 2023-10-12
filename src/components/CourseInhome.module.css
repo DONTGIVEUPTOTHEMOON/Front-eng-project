@@ -1,21 +1,26 @@
 .container {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  width: 80%;
-  max-width: 1080px;
-  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+  gap: 20px;
+  background-color: #1449ea15;
 }
 
 .blogContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 70px 80px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  gap: 80px 80px;
   width: 100%;
 }
 
 .sectionHeader {
   display: flex;
+  color: rgba(19, 71, 229, 0.878);
   align-items: center;
   justify-content: space-between;
 }
@@ -25,11 +30,10 @@
   gap: 4px;
   align-items: center;
   font-size: 28px;
-  color: #6b6b6b;
   font-weight: 400;
 }
 
 .viewAll {
-  color: #b90101;
+  color: rgba(19, 71, 229, 0.878);
   font-size: 20px;
 }

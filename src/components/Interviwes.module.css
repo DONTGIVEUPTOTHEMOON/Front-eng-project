@@ -1,23 +1,21 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  width: 80%;
-  max-width: 1080px;
-  margin: 0 auto;
+  padding: 60px 60px;
 }
 
 .blogContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 70px 80px;
   width: 100%;
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sectionHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .sectionTitle {

@@ -9,7 +9,7 @@ export const Courses: CourseDTO[] = [
     author: 'Thananchanok',
     date: 'Sep 4th, 2022',
     readingTime: '3 min',
-    url: 'https://blog.arken.finance/introducing-the-defi-review-by-arken-finance-da9e11581d50',
+    url: 'https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
   },
   {
     header: 'INTERIOR DESIGN',
@@ -19,7 +19,7 @@ export const Courses: CourseDTO[] = [
     author: 'Chaiwat',
     date: 'Sep 4th, 2022',
     readingTime: '9 min',
-    url: 'https://blogs.cleverse.com/welcome-to-the-world-of-web-3-0-d16b61235dc4',
+    url: 'https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
   },
   {
     header: 'DRAWIMG FOR BASIC',
@@ -28,7 +28,7 @@ export const Courses: CourseDTO[] = [
     author: 'Phatanuch',
     date: 'Aug 5th, 2022',
     readingTime: '6 min',
-    url: 'https://blogs.cleverse.com/solidity-made-easy-with-hardhat-91a6972362bb',
+    url: 'https://media.istockphoto.com/id/1057481164/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%A7%E0%B8%B4%E0%B8%A8%E0%B8%A7%E0%B8%81%E0%B8%A3%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%9B%E0%B8%99%E0%B8%B4%E0%B8%81%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%97%E0%B9%8D%E0%B8%B2%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A7%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%9E%E0%B8%B4%E0%B8%A1%E0%B8%9E%E0%B9%8C%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%A7-%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87.jpg?s=1024x1024&w=is&k=20&c=LsDyvfOAN0FuWe2fHOUms20pCP665MRXcNgg9gka3io=',
   },
   {
     header: 'DRAWIMG FOR STRUTURE',
@@ -38,6 +38,6 @@ export const Courses: CourseDTO[] = [
     author: 'Wannawong',
     date: 'Sep 27th, 2022',
     readingTime: '8 min',
-    url: 'https://blogs.cleverse.com/solving-dapps-problem-with-merkle-drop-ff656adca942',
+    url: 'https://images.unsplash.com/photo-1631454965644-00510875561f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
   },
 ]

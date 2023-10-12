@@ -12,8 +12,8 @@ const Home = () => {
   if (isLoading) return <h1 style={{ textDecoration: 'none', color: ' #6666dc' }}>Loading...</h1>
 
   return (
-    <div>
-      <div className={classes.container1}>
+    <div className={classes.feedContainer}>
+      <div className={classes.container}>
         <Slider />
         <SignUp />
       </div>

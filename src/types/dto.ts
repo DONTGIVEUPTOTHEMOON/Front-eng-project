@@ -93,7 +93,7 @@ export interface CourseDTO {
 }
 
 export interface InterviweDTO {
-  profile: string
+  thumbnailUrl: string
   description: string
   user: string
   date: string
