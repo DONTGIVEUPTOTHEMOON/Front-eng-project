@@ -18,7 +18,7 @@
   flex-direction: column;
   width: max-content;
   height: auto;
-  background-color: #6666dc24;
+  background-color: #0c49ff;
   margin-top: 90px;
   padding: 80px 80px;
   border-radius: 15px;
@@ -32,14 +32,14 @@
   padding: 20px 10px;
   box-sizing: border-box;
 
-  border-color: rgb(63, 80, 238);
+  border-color: #0d206cc3;
   border-width: 3px;
   border-radius: 30px;
 }
 
 .signup {
   /* background-color: rgb(48, 66, 229); */
-  background-color: rgb(40, 62, 255);
+  background-color: #144aea;
   border: none;
   margin-top: 15px;
   padding: 20px 20px;
