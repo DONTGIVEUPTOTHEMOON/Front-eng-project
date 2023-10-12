@@ -21,8 +21,8 @@ const Home = () => {
               />
               <div className={classes.formcontainer}>
                 <div>
-                  <p className={classes.fontmian}>Content</p>
-                  <p className={classes.font}>Spaec for share knowrage</p>
+                  <p className={classes.fontmian}>Community</p>
+                  <p className={classes.font}>Space for share knowledge</p>
                 </div>
                 <div>
                   <Create />
