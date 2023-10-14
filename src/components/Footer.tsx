@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom'
 import classes from './Footer.module.css'
-import classe from './Navbar.module.css'
 
 const Footer = () => {
   return (
