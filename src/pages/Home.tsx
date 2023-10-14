@@ -5,6 +5,7 @@ import SignUp from '../components/SignUp'
 import CourseInhome from '../components/CourseInhome'
 import Interviwes from '../components/Interviwes'
 import Footer from '../components/Footer'
+import RatingInhome from '../components/RatingInhome'
 
 const Home = () => {
   const { isLoading } = usePosts()
@@ -22,6 +23,7 @@ const Home = () => {
       </div>
       <div>
         <Interviwes />
+        <RatingInhome />
       </div>
       <Footer />
     </div>
