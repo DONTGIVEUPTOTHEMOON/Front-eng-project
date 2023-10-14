@@ -15,7 +15,7 @@ const InterviweDetail = ({ interviwe }: InterviweProps) => {
           </div>
         </div>
 
-        <div>
+        <div className={classes.cardcontent}>
           <p className={classes.author}>{interviwe.user}</p>
           <p className={classes.dateAndTime}>{interviwe.date}</p>
           <p className={classes.description}>{interviwe.description}</p>
