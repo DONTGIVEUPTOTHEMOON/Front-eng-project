@@ -53,6 +53,8 @@ export interface ContentDTO {
   postedBy: UserDTO
   createdAt: string
   updatedAt: string
+  status: string
+  profileUrl: string
 }
 
 export interface ContentsDTO {
@@ -84,6 +86,7 @@ export interface SliderDTO {
 
 export interface CourseDTO {
   header: string
+  newPage: string
   description: string
   tags: string[]
   author: string
@@ -97,4 +100,12 @@ export interface InterviweDTO {
   description: string
   user: string
   date: string
+}
+
+export interface UserInfoDTO {
+  profileUrl: string
+  name: string
+  work: string
+  datepost: string
+  statususer: string
 }

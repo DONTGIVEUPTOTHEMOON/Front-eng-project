@@ -1,14 +1,11 @@
-import useContents from '../hooks/useContents'
-import Content from '../components/community/Content'
-import classes from '../pages/Community.module.css'
-import Create from '../components/community/Create'
+import usePosts from '../hooks/useContents'
+import classes from '../pages/CourseDrawing.module.css'
 
-const Home = () => {
-  const { contents, isLoading } = useContents()
+const CourseDrawing = () => {
+  const { isLoading } = usePosts()
 
-  if (isLoading) return <h1>Loading...</h1>
+  if (isLoading) return <h1 style={{ textDecoration: 'none', color: ' #6666dc' }}>Loading...</h1>
 
-  console.log(contents)
   return (
     <div className={classes.container}>
       <div>
@@ -24,25 +21,13 @@ const Home = () => {
                   <p className={classes.fontmian}>Community</p>
                   <p className={classes.font}>Space for share knowledge</p>
                 </div>
-                <div>
-                  <Create />
-                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className={classes.containerContent}>
-        <div className={classes.cardContent}>
-          {contents &&
-            contents.data.map((content) => {
-              return <Content key={content.id} content={content} />
-            })}
         </div>
       </div>
     </div>
   )
 }
 
-export default Home
+export default CourseDrawing
