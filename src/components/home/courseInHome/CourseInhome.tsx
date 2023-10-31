@@ -1,4 +1,4 @@
-import { Courses } from '../constant/course-data'
+import { Courses } from '../../../constant/course-data'
 import Course from './CourseDetail'
 import classes from './CourseInhome.module.css'
 

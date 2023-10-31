@@ -1,9 +1,9 @@
 import { FormEvent, useState } from 'react'
 import classes from './Create.module.css'
-import useContents from '../hooks/useContents'
+import useContents from '../../hooks/useContents'
 import { useNavigate } from 'react-router-dom'
 
-const Create = () => {
+const BodyCourse = () => {
   const { isSubmitting, createContent } = useContents()
   const navigate = useNavigate()
   const [newVideoUrl, setNewVideoUrl] = useState<string>('')
@@ -61,4 +61,4 @@ const Create = () => {
   )
 }
 
-export default Create
+export default BodyCourse

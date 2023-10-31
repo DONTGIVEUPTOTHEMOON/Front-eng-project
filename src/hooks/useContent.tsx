@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { ContentDTO } from '../types/dto'
-import axios from 'axios'
+import { ContentDTO, UpdateContentDTO } from '../types/dto'
+import axios, { AxiosError } from 'axios'
 
 const useContent = (id: string) => {
   const [content, setContent] = useState<ContentDTO | null>(null)

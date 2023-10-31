@@ -1,8 +1,8 @@
 import { FormEvent, useState } from 'react'
 import classes from './SignUp.module.css'
-import {} from '../providers/AuthProvider'
+import {} from '../../providers/AuthProvider'
 import { useNavigate } from 'react-router-dom'
-import useSignup from '../hooks/useSignup'
+import useSignup from '../../hooks/useSignup'
 
 const SignUp = () => {
   const navigate = useNavigate()

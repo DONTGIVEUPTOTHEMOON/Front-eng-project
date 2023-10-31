@@ -1,4 +1,4 @@
-import { InterviweDTO } from '../types/dto'
+import { InterviweDTO } from '../../types/dto'
 import classes from './InterviweDetail.module.css'
 
 interface InterviweProps {
