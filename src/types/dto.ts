@@ -84,6 +84,7 @@ export interface SliderDTO {
 
 export interface CourseDTO {
   header: string
+  newPage: string
   description: string
   tags: string[]
   author: string

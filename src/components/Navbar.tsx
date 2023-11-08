@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import classes from './Navbar.module.css'
 import { NavLink } from 'react-router-dom'
-import { useAuth } from '../providers/AuthProvider'
+import { useAuth } from './../providers/AuthProvider'
 
 const Navbar = () => {
   const { isLoggedIn, logout } = useAuth()
@@ -22,6 +22,10 @@ const Navbar = () => {
         <NavLink className={({ isActive }) => (isActive ? classes.active : classes.inactive)} to="/community">
           <p>Community</p>
         </NavLink>
+
+        <NavLink className={({ isActive }) => (isActive ? classes.active : classes.inactive)} to="/coursedrawing">
+          <p>CourseDrawing</p>
+        </NavLink>
       </div>
 
       <div className={classes.menu}>
@@ -30,6 +34,7 @@ const Navbar = () => {
             <NavLink className={({ isActive }) => (isActive ? classes.active : classes.inactive)} to="/profile">
               Profile
             </NavLink>
+
             <button className={classes.logout} onClick={logout}>
               Log out
             </button>
@@ -44,3 +49,18 @@ const Navbar = () => {
   )
 }
 export default Navbar
+
+{
+  /* <NavLink className={({ isActive }) => (isActive ? classes.active : classes.inactive)} to="/coursedrawing">
+<p>CourseDrawing</p>
+</NavLink>
+<NavLink className={({ isActive }) => (isActive ? classes.active : classes.inactive)} to="/coursecon">
+<p>CourseArch</p>
+</NavLink>
+<NavLink className={({ isActive }) => (isActive ? classes.active : classes.inactive)} to="/coursein">
+<p>CourseIn</p>
+</NavLink>
+<NavLink className={({ isActive }) => (isActive ? classes.active : classes.inactive)} to="/coursevisual">
+<p>CourseVisual</p>
+</NavLink> */
+}

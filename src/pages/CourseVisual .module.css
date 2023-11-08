@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.containerIntro {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  color: aliceblue;
+  gap: 30px;
+}
+
+.cardIntro {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.42);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.cardImg {
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  width: 100%;
+  object-fit: none;
+  align-items: center;
+  object-position: center;
+  justify-content: center;
+}
+.formcontainer {
+  position: absolute;
+  display: flex;
+  font-size: x-large;
+  justify-content: space-between;
+  gap: 1000px;
+
+  top: 0%; /* จัดตำแหน่งของ form ให้อยู่ที่กลางด้านบนของภาพ */
+  left: 2%; /* จัดตำแหน่งของ form ให้อยู่ที่กลางด้านซ้ายของภาพ */
+  right: 0%;
+  padding: 20px;
+}
+
+.cardContent {
+  padding-top: 30px;
+  display: grid;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  border: 1px solid #000000b9;
+}
+
+.fontmian {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 90px;
+}
+
+.font {
+  font-size: 30px;
+}

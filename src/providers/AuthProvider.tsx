@@ -1,6 +1,6 @@
 import { ReactNode, createContext, useContext, useState } from 'react'
-import { CredentialDTO, LoginDTO } from '../types/dto'
-import axios from 'axios'
+import { CredentialDTO, LoginDTO, SignUpDTO } from '../types/dto'
+import axios, { AxiosError } from 'axios'
 import { useNavigate } from 'react-router-dom'
 
 interface IAuthProviderProps {
@@ -11,6 +11,7 @@ interface IAuthContextType {
   isLoggedIn: boolean
   username: string | null
   login: (username: string, password: string) => Promise<void>
+  signup: (registerBody: SignUpDTO) => Promise<void>
   logout: () => void
 }
 
@@ -33,7 +34,7 @@ const AuthProvider = ({ children }: IAuthProviderProps) => {
   const login = async (username: string, password: string) => {
     const loginBody: LoginDTO = { username, password }
     try {
-      const res = await axios.post<CredentialDTO>('https://api.learnhub.thanayut.in.th/auth/login', loginBody, {
+      const res = await axios.post<CredentialDTO>('http://localhost:8080/auth/login', loginBody, {
         headers: { 'Content-Type': 'application/json' },
       })
 
@@ -42,9 +43,22 @@ const AuthProvider = ({ children }: IAuthProviderProps) => {
       setIsLoggedin(true)
       setUsername(username)
     } catch (err) {
-      throw new Error('Invalid username or password')
+      if (err instanceof AxiosError) throw new Error(err.response?.data.message)
     }
   }
+
+  const signup = async (registerBody: SignUpDTO) => {
+    try {
+      await axios.post('http://localhost:8080/user', registerBody, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+    } catch (err) {
+      if (err instanceof AxiosError) throw new Error(err.response?.data.message)
+    }
+  }
+
   const logout = () => {
     localStorage.clear
     setIsLoggedin(false)
@@ -52,7 +66,7 @@ const AuthProvider = ({ children }: IAuthProviderProps) => {
 
     navigate('/')
   }
-  return <AuthContext.Provider value={{ isLoggedIn, username, login, logout }}>{children}</AuthContext.Provider>
+  return <AuthContext.Provider value={{ isLoggedIn, login, logout, signup, username }}>{children}</AuthContext.Provider>
 }
 
 export default AuthProvider

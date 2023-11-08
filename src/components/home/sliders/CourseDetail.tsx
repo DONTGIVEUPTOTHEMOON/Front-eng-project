@@ -1,4 +1,5 @@
-import { CourseDTO } from '../types/dto'
+import { Link } from 'react-router-dom'
+import { CourseDTO } from '../../../types/dto'
 import classes from './CourseDetail.module.css'
 import Tag from './TagCourse'
 
@@ -8,7 +9,7 @@ interface ICourseProps {
 
 const CourseDetail = ({ course }: ICourseProps) => {
   return (
-    <div className={classes.container}>
+    <Link to={`${course.newPage}`} className={classes.container}>
       <h2 className={classes.blogHeader}>{course.header}</h2>
       <p className={classes.description}>{course.description}</p>
       <div className={classes.tagContainer}>
@@ -22,7 +23,8 @@ const CourseDetail = ({ course }: ICourseProps) => {
           {course.date} • {course.readingTime}
         </p>
       </div>
-    </div>
+    </Link>
   )
 }
+
 export default CourseDetail

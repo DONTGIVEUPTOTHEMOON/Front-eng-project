@@ -1,7 +1,7 @@
 import useContents from '../hooks/useContents'
-import Content from '../components/Content'
+import Content from '../components/community/content/Content'
 import classes from '../pages/Community.module.css'
-import Create from '../components/Create'
+import Create from '../components/community/content/Create'
 
 const Home = () => {
   const { contents, isLoading } = useContents()

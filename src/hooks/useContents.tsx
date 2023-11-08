@@ -1,22 +1,23 @@
 import { useEffect, useState } from 'react'
 import { ContentsDTO, CreateContentDTO } from '../types/dto'
-import axios from 'axios'
+import axios, { AxiosError } from 'axios'
 
 const useContents = () => {
   const [contents, setContents] = useState<ContentsDTO | null>(null)
   const [isLoading, setIsLoading] = useState<boolean>(false)
+  const [error, setError] = useState(null)
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false)
 
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true)
       try {
-        const res = await axios.get<ContentsDTO>('https://api.learnhub.thanayut.in.th/content')
+        const res = await axios.get<ContentsDTO>('http://localhost:8080/content')
 
         console.log(res.data)
         setContents(res.data)
       } catch (err) {
-        console.error(err)
+        if (err instanceof AxiosError) setError(err.response?.data.message)
       } finally {
         setIsLoading(false)
       }
@@ -35,7 +36,7 @@ const useContents = () => {
 
     setIsSubmitting(true)
     try {
-      const res = await axios.post<CreateContentDTO>('https://api.learnhub.thanayut.in.th/content', newContentBody, {
+      const res = await axios.post<CreateContentDTO>('http://localhost:8080/content', newContentBody, {
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${token}`,
@@ -44,13 +45,13 @@ const useContents = () => {
 
       console.log(res.data)
     } catch (err) {
-      throw new Error('Cannot create content')
+      if (err instanceof AxiosError) throw new Error(err.response?.data.message)
     } finally {
-      setIsSubmitting(false)
+      setIsLoading(false)
     }
   }
 
-  return { contents, isLoading, isSubmitting, createContent }
+  return { contents, isLoading, error, isSubmitting, createContent }
 }
 
 export default useContents

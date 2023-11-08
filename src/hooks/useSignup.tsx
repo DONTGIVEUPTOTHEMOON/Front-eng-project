@@ -9,7 +9,7 @@ const useSignup = () => {
       password: password,
     }
     try {
-      await axios.post(`https://api.learnhub.thanayut.in.th/user`, body)
+      await axios.post(`http://localhost:8080/user`, body)
     } catch (err) {
       throw new Error('sign agian ja')
     }

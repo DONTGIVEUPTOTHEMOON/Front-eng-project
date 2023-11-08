@@ -1,4 +1,4 @@
-import { INTERVIWE } from '../constant/interviwe-data'
+import { INTERVIWE } from '../../constant/interviwe-data'
 import InterviweDetail from './InterviweDetail'
 import classes from './Interviwes.module.css'
 

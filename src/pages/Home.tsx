@@ -1,11 +1,11 @@
 import usePosts from '../hooks/useContents'
 import classes from './Home.module.css'
-import Slider from '../components/sliders/Slider'
-import SignUp from '../components/SignUp'
-import CourseInhome from '../components/CourseInhome'
-import Interviwes from '../components/Interviwes'
-import Footer from '../components/Footer'
-import RatingInhome from '../components/RatingInhome'
+import Slider from '../components/home/sliders/Slider'
+import SignUp from '../components/signup/SignUp'
+import CourseInhome from '../components/home/sliders/CourseInhome'
+import Interviwes from '../components/interviwes/Interviwes'
+import Footer from '../components/home/sliders/Footer'
+import RatingInhome from '../components/home/sliders/RatingInhome'
 
 const Home = () => {
   const { isLoading } = usePosts()

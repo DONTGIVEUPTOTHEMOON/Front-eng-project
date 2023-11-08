@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ContentDTO } from '../types/dto'
+import { ContentDTO } from '../../../types/dto'
 import classes from './Content.module.css'
 import { Link } from 'react-router-dom'
 

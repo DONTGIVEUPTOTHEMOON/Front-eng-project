@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { ContentDTO } from '../types/dto'
-import axios from 'axios'
+import { ContentDTO, UpdateContentDTO } from '../types/dto'
+import axios, { AxiosError } from 'axios'
 
 const useContent = (id: string) => {
   const [content, setContent] = useState<ContentDTO | null>(null)
@@ -11,7 +11,7 @@ const useContent = (id: string) => {
     const fetchData = async () => {
       setIsLoading(true)
       try {
-        const res = await axios.get<ContentDTO>(`https://api.learnhub.thanayut.in.th/content/${id}`)
+        const res = await axios.get<ContentDTO>(`http://localhost:8080/content/${id}`)
 
         setContent(res.data)
       } catch (err) {
@@ -24,21 +24,36 @@ const useContent = (id: string) => {
     fetchData()
   }, [id])
 
-  const deletes = async () => {
+  const editContent = async (updateBody: UpdateContentDTO) => {
     const token = localStorage.getItem('token')
+
     try {
-      await axios.delete(`https://api.learnhub.thanayut.in.th/content/${id}`, {
+      await axios.patch(`http://localhost:8080/content/${id}`, updateBody, {
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${token}`,
         },
       })
     } catch (err) {
-      throw new Error('Cannot delete post')
+      if (err instanceof AxiosError) throw new Error(err.response?.data.message)
     }
   }
 
-  return { content, isLoading, error, deletes }
+  const deletes = async () => {
+    const token = localStorage.getItem('token')
+    try {
+      await axios.delete(`http://localhost:8080/content/${id}`, {
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+      })
+    } catch (err) {
+      if (err instanceof AxiosError) throw new Error(err.response?.data.message)
+    }
+  }
+
+  return { content, isLoading, error, editContent, deletes }
 }
 
 export default useContent

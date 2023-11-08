@@ -1,10 +1,12 @@
 import { FormEvent, useState } from 'react'
+import ReactStars from 'react-stars'
+
 import classes from './Create.module.css'
-import useContents from '../hooks/useContents'
+import useContents from '../../../hooks/useContents'
 import { useNavigate } from 'react-router-dom'
 
 const Create = () => {
-  const { isSubmitting, createContent } = useContents()
+  const { createContent } = useContents()
   const navigate = useNavigate()
   const [newVideoUrl, setNewVideoUrl] = useState<string>('')
   const [newComment, setNewComment] = useState<string>('')
@@ -45,18 +47,19 @@ const Create = () => {
         onChange={(e) => setNewComment(e.target.value)}
         required
       />
-      <label>Rating</label>
-      <input
-        className={classes.buttonforCreated}
-        type="text"
-        value={newRating}
-        onChange={(e) => setNewRating(Number(e.target.value))}
-        required
-      />
 
-      <button className={classes.buttonforCreated} type="submit" disabled={isSubmitting}>
-        {isSubmitting ? 'Submitting...' : 'Submit'}
-      </button>
+      <div className="flex items-center gap-2">
+        <label>Rating:</label>
+        <ReactStars
+          count={5}
+          value={newRating}
+          onChange={(newRating) => setNewRating(newRating)}
+          size={24}
+          color2={'#ffd700'}
+          half={false}
+        />
+      </div>
+      <button className="bg-orange-500 p-3 rounded-lg text-white hover:bg-orange-600">Submit</button>
     </form>
   )
 }
